@@ -1,4 +1,7 @@
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=4959
 
 This is a plugin for editing fortran-90+. It gives keymapping for writing f90+ codes with ease.
-This is .1 version, and heavily in development. Kindly update, comment, suggest and check :h vimf90+List regularly
+The latest plugin will always be available at https://github.com/rudrab/vimf90
+
+This is heavily under development. Kindly update, comment, suggest and check :h vimf90+List regularly
+NB: Note the change in name. its now vimf90, rather then vimf90+, as github doesn't  accept + as its last letter
