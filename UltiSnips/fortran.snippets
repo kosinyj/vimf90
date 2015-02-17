@@ -50,11 +50,16 @@ if (${1:<if>}) then
 end if ! $1
 endsnippet
 
-snippet case
+snippet sel
 select case (${1:<case>})
 case(${2:<++var1++>})
   ${3:<++Start Typing++>}
 case default
   ${4:<++default++>}
 end select ! $1
+endsnippet
+
+snippet cas
+case(${1:<++var1++>})
+  ${2:<++Start Typing++>}
 endsnippet
