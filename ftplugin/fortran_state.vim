@@ -30,3 +30,13 @@ call IMAP ('`sie', 'selected_integer_kind(<++>)', "fortran")
 :call IMAP ('`faim',    'aimag(<++>)',            "fortran")
 :call IMAP ('`faint',   'aint(<++>)',             "fortran")
 
+" logic operation
+call IMAP ('`n' , '.and.',   "fortran")
+call IMAP ('`o' , '.or.' ,   "fortran")
+call IMAP ('`! ', '.not.',   "fortran")
+call IMAP ('`=' , '.eq.',    "fortran")
+call IMAP ('`< ', '.lt.',    "fortran")
+call IMAP ('`<=', '.le.',    "fortran")
+call IMAP ('`> ', '.gt.',    "fortran")
+call IMAP ('`>=', '.ge.',    "fortran")
+call IMAP ('`!=', '.ne.',    "fortran")
