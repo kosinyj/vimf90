@@ -37,3 +37,24 @@ endsnippet
 snippet use
 use <++>,    only : <++>
 endsnippet
+
+snippet do
+do ${1:<do>} = ${2:<range>}
+  ${3:<++Start Typing++>}
+end do ! $1
+endsnippet
+
+snippet if
+if (${1:<if>}) then
+  ${2:<++Start Typing++>}
+end if ! $1
+endsnippet
+
+snippet case
+select case (${1:<case>})
+case(${2:<++var1++>})
+  ${3:<++Start Typing++>}
+case default
+  ${4:<++default++>}
+end select ! $1
+endsnippet
