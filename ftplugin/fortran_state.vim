@@ -3,9 +3,9 @@
 " of fortran90+
 "
 "Formatting
- inoremap <expr> = getline(".")[col(".")-2] =~ '[[:alnum:])]' ? " = " : "=" 
- inoremap <expr> + getline(".")[col(".")-2] =~ '[[:alnum:])]' ? " + " : "+" 
- inoremap <expr> - getline(".")[col(".")-2] =~ '[[:alnum:])]' ? " - " : "-" 
+"  inoremap <expr> = getline(".")[col(".")-2] =~ '[[:alnum:])]' ? " = " : "=" 
+"  inoremap <expr> + getline(".")[col(".")-2] =~ '[[:alnum:])]' ? " + " : "+" 
+"  inoremap <expr> - getline(".")[col(".")-2] =~ '[[:alnum:])]' ? " - " : "-" 
 
 " "declarations 
 call IMAP ('`wr',  'write(<++>,*)<++>',           "fortran")
