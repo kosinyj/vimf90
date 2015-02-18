@@ -1,6 +1,6 @@
 snippet prg 
 !This is file : `!v expand('%:r')`
-! Author= `!v expand($USER)`
+! Author= `!v expand(getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}')`
 ! Started at: `date +%d.%m.%y`
 ! 
 program ${1:`!v expand('%:r')`}
@@ -11,7 +11,7 @@ endsnippet
 
 snippet mod
 !This is file : `!v expand('%:r')`
-! Author=  `!v expand($USER)`
+! Author= `!v expand(getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}')`
 ! Started at: `date +%d.%m.%y`
 ! 
 module ${1:`!v expand('%:r')`}
