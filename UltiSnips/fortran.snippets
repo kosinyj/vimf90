@@ -2,7 +2,7 @@ snippet prg
 !
 ! Author    : `getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}'`
 ! Started at: `date +%d.%m.%y`
-! 
+!
 program ${1:`!v expand('%:r')`}
 implicit none
 ${2:<++Start Typing++>}
@@ -13,7 +13,7 @@ snippet mod
 !
 ! Author    : `getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}'`
 ! Started at: `date +%d.%m.%y`
-! 
+!
 module ${1:`!v expand('%:r')`}
 implicit none
 ${2:<++Start Typing++>}
@@ -25,7 +25,7 @@ subroutine  ${1:<Subroutine>}()
 !
 ! Author    : `getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}'`
 ! Started at: `date +%d.%m.%y`
-! 
+!
 implicit none
 ${2:<++Start Typing++>}
 end subroutine $1
@@ -36,7 +36,7 @@ function ${1:<Function>}()
 !
 ! Author    : `getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}'`
 ! Started at: `date +%d.%m.%y`
-! 
+!
 implicit none
 ${2:<++Start Typing++>}
 end function $1
