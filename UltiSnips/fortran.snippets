@@ -58,6 +58,36 @@ if (${1:<if>}) then
 end if ! $1
 endsnippet
 
+snippet ifs
+if (${1:<if>}) ${2:<++Start Typing++>}
+endsnippet
+
+snippet ife
+if (${1:<if>}) then
+  ${2:<++Start Typing++>}
+else
+  ${3:<++modify++>}$2
+end if ! $1
+endsnippet
+
+snippet ifef
+if (${1:<if>}) then
+  ${2:<++Start Typing++>}
+else if (${3:<++modify++>}$1)
+  ${4:<++modify++>}$2
+end if ! $1
+endsnippet
+
+snippet ifefe
+if (${1:<if>}) then
+  ${2:<++Start Typing++>}
+else if (${3:<++modify++>}$1)
+  ${4:<++modify++>}$2
+else
+  ${5:<++modify++>}$2
+end if ! $1
+endsnippet
+
 snippet sel
 select case (${1:<case>})
 case (${2:<++var1++>})
