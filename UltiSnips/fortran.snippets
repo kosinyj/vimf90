@@ -4,8 +4,10 @@ snippet prg
 ! Started at: `date +%d.%m.%y`
 !
 program ${1:`!v expand('%:r')`}
-implicit none
-${2:<++Start Typing++>}
+  implicit none
+  ${2:<++Start Typing++>}
+	!
+  stop
 end program $1
 endsnippet
 
@@ -15,35 +17,41 @@ snippet mod
 ! Started at: `date +%d.%m.%y`
 !
 module ${1:`!v expand('%:r')`}
-implicit none
-${2:<++Start Typing++>}
+  implicit none
+	save
+	!
+	! variables
+	contains
+  ${2:<++Start Typing++>}
 end module $1
 endsnippet
 
 snippet sub
 subroutine  ${1:<Subroutine>}()
-!
-! Author    : `getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}'`
-! Started at: `date +%d.%m.%y`
-!
-implicit none
-${2:<++Start Typing++>}
+  !
+  ! Author    : `getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}'`
+  ! Started at: `date +%d.%m.%y`
+  !
+  implicit none
+  ${2:<++Start Typing++>}
+	!
+	return
 end subroutine $1
 endsnippet
 
 snippet fun
 function ${1:<Function>}()
-!
-! Author    : `getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}'`
-! Started at: `date +%d.%m.%y`
-!
-implicit none
-${2:<++Start Typing++>}
+  !
+  ! Author    : `getent passwd |grep $USER|awk 'BEGIN { FS = ":" } ;{print $5}'`
+  ! Started at: `date +%d.%m.%y`
+  !
+  implicit none
+  ${2:<++Start Typing++>}
 end function $1
 endsnippet
 
 snippet use
-use <++>,    only : <++>
+  use <++>,    only : <++>
 endsnippet
 
 snippet do
