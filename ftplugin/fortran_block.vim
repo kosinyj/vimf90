@@ -15,8 +15,6 @@
 "    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 "    GNU General Public License for more details.
 "
-" Description: 
-"    This maps the <F7> key to complete Fortran 90 constructs"
 
 
 
@@ -90,6 +88,3 @@ def fortran_complete():
             cb[line+2] = indent + closingline 
             vim.current.window.cursor = (line+2, 1)
 EOF
-
-nmap <F7> :python fortran_complete()<cr>A
-imap <F7> :python fortran_complete()<cr>A

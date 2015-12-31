@@ -29,21 +29,6 @@ is included, and the different utility is not in sync properly(i.e.
 2. Mappings                       *vimf90-Map*
 This explains mappings of this plugin.
 -----------------------------------------------------
-2.1 construct                        *vimf90-construct*
-if,do,select etc statements, that are closed by a corresponding
-end is defined here. After typing the first line, pressing <F7>
-will complete the construct. For example:
-you type:                   you get:      
-trial: do i=1,10            trial: do i=1,10
-<cursor here>
-end do trial
-
-Avalable construct:
-  i) do, ii) if, iii)selectcase, iv)forall, v)type,
-
-NB: This part is largly copied from 
-(http://www.vim.org/scripts/script.php?script_id=2487)
------------------------------------------------------
 2.2. statements                 *vimf90-stats*
 Some statements is included here for less typing. These are 
 mostly one-liner or part of the line:
@@ -77,13 +62,6 @@ End Program   <program name you give, by default, filename>
 -----------------------------------------------------
 2.4 List of Mappings            *vimf90-List*
 Type:                                 get:
------------------------------------------------------
-Construct                       *vimf90-List-Cons*
-[name:]do[iterator]<F7>           do construct 
-[name:]if(condition)then<F7>      if construct 
-selectcase<F7>                    select construct 
-forall<F7>                        forall construct
-type::name<F7>                    type  construct
 -----------------------------------------------------
 Statements                      *vimf90-List-State*
 `wr                               write(<cursor here>,*)<++>
