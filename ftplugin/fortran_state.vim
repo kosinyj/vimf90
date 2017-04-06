@@ -18,6 +18,10 @@ call IMAP ('`dim', 'dimension(<++>)',            "fortran")
 call IMAP ('`par', 'parameter',                  "fortran")
 call IMAP ('`sre', 'selected_real_kind(<++>)',   "fortran")
 call IMAP ('`sie', 'selected_integer_kind(<++>)',"fortran")
+call IMAP ('`ire',  'real(<++>),intent(<++>) :: <++>',         "fortran")
+call IMAP ('`ir8',  'real(8),intent(<++>) :: <++>',            "fortran")
+call IMAP ('`iin',  'integer,intent(<++>) :: <++>',            "fortran")
+call IMAP ('`ich',  'character(len=<++>),intent(<++>) :: <++>',"fortran")
 
 "INTRINSIC PROCEDURES
 :call IMAP ('`fab',     'abort',                  "fortran")
